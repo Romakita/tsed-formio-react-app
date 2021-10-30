@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Formio, Templates } from "@tsed/react-formio";
+import tailwind from "@tsed/tailwind-formio";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+Formio.use(tailwind);
+Templates.framework = "tailwind";
 
 ReactDOM.render(
   <React.StrictMode>
