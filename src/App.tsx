@@ -2,11 +2,13 @@ import React from "react";
 import {FormBuilder} from "@tsed/react-formio";
 
 function App() {
-  return (
-    <div className="App">
-      <FormBuilder display={'form'} components={[]} />
-    </div>
-  );
+    // @ts-ignore
+    const div = <>
+        <div className="App">
+            <FormBuilder display={'form'} components={[]}/>
+        </div>
+    </>;
+    return div;
 }
 
 export default App;
